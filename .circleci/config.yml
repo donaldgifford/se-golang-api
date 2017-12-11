@@ -1,0 +1,19 @@
+version: 2
+general:
+  branches:
+    only:
+      - master # list of branches to build
+      - /feature-.*/ # or regexes
+jobs:
+ build:
+   machine: true
+   steps:
+     - checkout
+     - run: |
+         docker login -u $DOCKER_USER -p $DOCKER_PASS
+     - run: echo $CIRCLE_BRANCH-$CIRCLE_BUILD_NUM > conf/version.txt
+     # build the application image
+     - run: docker build -t donaldgifford/se-golang-api:$CIRCLE_BRANCH-$CIRCLE_BUILD_NUM .
+
+     # deploy the image
+     - run: docker push donaldgifford/se-golang-api:$CIRCLE_BRANCH-$CIRCLE_BUILD_NUM

@@ -1,0 +1,16 @@
+{
+    "id": "se-golang-api",
+    "summary": "se-golang-api",
+    "description": "A Golang API for se-interview",
+    "maintainers": [
+      "donaldgifford"
+    ],
+    "projectRepo": "https://github.com/donaldgifford/se-golang-api",
+    "projectHome": "https://github.com/donaldgifford/se-golang-api",
+    "logsLinks": [
+      "https://logging.com/donaldgifford/se-golang-api"
+    ],
+    "statsLinks": [
+      "https://stats.com/donaldgifford/se-golang-api"
+    ]
+  }
