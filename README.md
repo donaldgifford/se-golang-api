@@ -17,7 +17,7 @@ ENV VARS to specify DB connections:
 ```
 	"DB_NAME" - "The database used IE - api"
 	"DB_USER" - "The postgres user to connect with"
-    "DB_PASS" - "The postgres password to connect with"
+    	"DB_PASS" - "The postgres password to connect with"
 	"DB_HOST" - "connection string to the db"
 	"DB_PORT" - "The postgres db port - typically 5432"
 ```
