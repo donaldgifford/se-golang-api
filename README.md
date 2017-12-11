@@ -1,5 +1,7 @@
 # se-golang-api
 
+Build Status - [![CircleCI](https://circleci.com/gh/donaldgifford/se-golang-api/tree/master.svg?style=svg&circle-token=e33ee58cdecd2407d03c5699ae35102b485608e9)](https://circleci.com/gh/donaldgifford/se-golang-api/tree/master)
+
 A simple golang api that exposes a status endpoint. This API is intended to be connected to a postgres db in which it performs a status check on if the API can connect or not. 
 
 Libraries used:
